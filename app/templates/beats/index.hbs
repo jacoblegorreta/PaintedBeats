@@ -1,0 +1,12 @@
+here are the number of beats
+<ul >
+  {{#each @model as |beat|}}
+    <li>
+      <LinkTo @route='beats.beat' @model={{beat}}>
+        {{beat.name}}
+      </LinkTo>
+    </li>
+  {{/each}}
+</ul>
+
+ ... {{@model.legnth}}

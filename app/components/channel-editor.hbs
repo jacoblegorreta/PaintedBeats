@@ -1,0 +1,6 @@
+<div class="flex">
+  <span class= "w-32 bg-gray-400">{{@channel.sound}}</span>
+  {{#each @channel.steps as |step|}}
+    <StepEditor @step={{step}} />
+  {{/each}}
+</div>

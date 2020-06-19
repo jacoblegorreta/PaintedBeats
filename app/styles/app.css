@@ -1,0 +1,49 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "components.css";
+@import "tailwindcss/utilities";
+@import "utilities.css";
+
+html, body {
+  overflow-x: hidden;
+}
+body{
+  background-color: rgb(124, 124, 124)
+}
+section {
+  box-sizing: border-box; /* or not */
+  margin: 0 auto;
+  width: 25rem;
+  background: white;
+  padding: 1.5rem;
+}
+h1, .full-width {
+  text-align: center;
+  position: relative;
+  margin: 0 -9999rem;
+  padding: .25rem 9999rem;
+  background: #666;
+  background: rgba(0, 0, 0,.5);
+  color: rgb(87, 193, 186);
+  font-size: 2.125rem;
+}
+ul{
+  background-color: rgb(23, 70, 62)
+}
+.instruments{
+  padding: 2px;
+  margin: 5px;
+}
+.beatcontrols{
+  background-color: rgb(203, 6, 227);
+  padding: 2px;
+  margin: 5px;
+}
+.beateditor{
+  background-color: rgb(136, 6, 227);
+    padding: 2px;
+    margin: 5px;
+}
+.stepButton{
+  background-color: grey;
+}

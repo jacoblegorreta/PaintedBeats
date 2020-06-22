@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "howler": "^2.2.0",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
   }
 }

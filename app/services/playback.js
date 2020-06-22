@@ -52,7 +52,7 @@ export default class PlaybackService extends Service {
   *tick() {
     if (this.isPlaying) {
       this.beat.setTickCount(this.tickCount);
-    let notes = this.beat.getPlayingNotes();
+      let notes = this.beat.getPlayingNotes();
 
       this.audio.playNotes(notes);
       yield timeout(this.interval);

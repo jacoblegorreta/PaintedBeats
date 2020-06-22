@@ -63,6 +63,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "howler": "^2.2.0"
+    "howler": "^2.2.0",
+    "tailwindcss": "^1.4.6"
   }
 }

@@ -1,9 +1,9 @@
-@tailwind "tailwindcss/base";
-@tailwind "tailwindcss/components";
-@tailwind "components.css";
-@tailwind "tailwindcss/utilities";
-@tailwind "utilities.css";
-@tailwind "app/tailwind/config.js"
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "components.css";
+@import "tailwindcss/utilities";
+@import "utilities.css";
+@import "app/tailwind/config.js"
 
 html, body {
   overflow-x: hidden;

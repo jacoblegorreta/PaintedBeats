@@ -724,5 +724,5 @@ module.exports = {
     transitionDelay: ['responsive'],
   },
   corePlugins: {},
-  plugins: [require('tailwindcss')('./app/javascript/css/tailwind.js')],
+  plugins: [],
 }

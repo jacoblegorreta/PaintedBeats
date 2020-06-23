@@ -1,4 +1,4 @@
-import container from 'tailwindcss/plugins/container';
+//import container from 'tailwindcss/plugins/container';
 
 import colors from './colors';
 import screens from './screens';
@@ -122,10 +122,10 @@ export default {
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover', 'focus'],
     tracking: ['responsive'],
-    userSelect: ['responsive'],
-    verticalAlign: ['responsive'],
-    visibility: ['responsive'],
-    whitespace: ['responsive'],
+    //userSelect: ['responsive'],
+    //verticalAlign: ['responsive'],
+    //visibility: ['responsive'],
+    //whitespace: ['responsive'],
     width: ['responsive'],
     zIndex: ['responsive'],
   },

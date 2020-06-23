@@ -39,8 +39,9 @@ get sounds(){
   }
   playNotes(notes){
     notes.forEach(note => {
-    this.howl.play(note.sound);
-    this.howl.volume(0.15, note.volume);
+    let soundId = this.howl.play(note.sound);
+    this.howl.volume(0.1, notes.volume);
+
   });
   }
 }

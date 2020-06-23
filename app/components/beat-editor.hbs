@@ -1,5 +1,10 @@
 <div class= "beateditor">
   {{#each @beat.channels as |channel|}}
-    <ChannelEditor @channel={{channel}} />
+    <ChannelEditor @channel={{channel}} @onDelete= {{fn this.deleteChannel  channel}} />
   {{/each}}
+  <button
+{{on "click" this.addChannel}}
+  class= "p-1 bg-gray-300 rounded">
+    Add Instrument
+  </button>
 </div>

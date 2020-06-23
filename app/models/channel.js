@@ -15,6 +15,9 @@ export default class ChannelModel extends Model {
   }
 
   getPlayingNote(){
+    if (this.steps.length === 0){
+      return;
+    }
     let playingStep = this.steps.find(step => step.isPlaying);
 
     if (playingStep.volume > 0){

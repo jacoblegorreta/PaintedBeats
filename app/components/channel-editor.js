@@ -8,7 +8,19 @@ export default class ChannelEditorComponent extends Component {
   @tracked isInstrumentSelectorVisable = false;
 
   @action
-  addStep(){
+  addSteps(){
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
+    this.args.channel.steps.createRecord();
     this.args.channel.steps.createRecord();
     this.args.channel.steps.createRecord();
     this.args.channel.steps.createRecord();
@@ -24,4 +36,9 @@ export default class ChannelEditorComponent extends Component {
   hideInstrumentSelector(){
     this.isInstrumentSelectorVisable = false;
   }
+@action
+  changeSound(sound){
+    this.args.channel.sound = sound;
+  }
+
 }

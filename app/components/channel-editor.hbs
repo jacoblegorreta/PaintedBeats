@@ -1,6 +1,12 @@
 <div class="flex">
+
+  <button
+    {{on "click" @onDelete}}
+    class= "m-1 w-5 bg-red-200 rounded">
+    ⦻
+  </button>
   <div
-  class="w-32 bg-gray-300 rounded"
+  class="w-32 m-1 bg-gray-300 text-center rounded "
   {{on "mouseenter" this.showInstrumentSelector}}
   {{on "mouseleave" this.hideInstrumentSelector}}
   >
@@ -11,6 +17,7 @@
   <div class= "absolute bg-white rounded">
     {{#each this.audio.sounds as |sound|}}
       <button
+      {{on "click" (fn this.changeSound sound)}}
       class= "p-1 bg-gray-200 text-xs">
       {{sound}}
       </button>
@@ -20,18 +27,12 @@
 </div>
 
 
-  <button
-    {{on "click" @onDelete}}
-    class= "w-5 bg-red-200 rounded">
-    ⦻
-  </button>
-
   {{#each @channel.steps as |step|}}
     <StepEditor @step={{step}} />
   {{/each}}
 
-  <button
-  {{on "click" this.addStep}}
+ <button
+  {{on "click" this.addSteps}}
   class = "p-1 h-6 m-1 bg-gray-200 text-xs rounded">
   +
 </button>
